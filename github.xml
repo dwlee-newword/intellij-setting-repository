@@ -1,0 +1,7 @@
+<application>
+  <component name="GithubAccounts">
+    <account name="dwlee-newword" id="473d8b44-59f7-4f88-b684-650733d0c85b">
+      <server host="github.com" />
+    </account>
+  </component>
+</application>

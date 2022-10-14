@@ -1,0 +1,31 @@
+<templateSet group="JavaScript">
+  <template name="newget" value="@Get('$API_PATH$')&#10;@Render('$RENDER_PATH$')&#10;@ApiOperation({&#10;  summary: '$SUMMARY$',&#10;  description: '$DESCRIPTION$',&#10;})&#10;@ApiOkResponse({&#10;  type: ResponseDto,&#10;})&#10;@HttpCode(200)&#10;async $FUNCTION_NAME$(@Req() request: Request): Promise&lt;ResponseDto&gt; {&#10;  const { url } = request;&#10;  return {&#10;    type: 200,&#10;    title: 'Success',&#10;    instance: url,&#10;    data: {},&#10;  } as ResponseDto;&#10;}" description="Make New Get Function" toReformat="false" toShortenFQNames="true">
+    <variable name="API_PATH" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="RENDER_PATH" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="SUMMARY" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="FUNCTION_NAME" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="axios" value="const axiosData = {&#10;  $DATA_NAME$: $DATA_VALUE$,&#10;};&#10;const axiosPostConfig = {&#10;  method: '$TYPE$',&#10;  url: '$URL$',&#10;  headers: {&#10;    'Content-Type': 'application/x-www-form-urlencoded',&#10;  },&#10;  data: axiosData,&#10;};&#10;&#10;const res = await axios(axiosPostConfig);&#10;const result = res.data;" description="axios form" toReformat="false" toShortenFQNames="true">
+    <variable name="DATA_NAME" expression="" defaultValue="&quot;input_data_name&quot;" alwaysStopAt="true" />
+    <variable name="DATA_VALUE" expression="" defaultValue="&quot;input_data_value&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="&quot;post, get, put, delete&quot;" alwaysStopAt="true" />
+    <variable name="URL" expression="" defaultValue="&quot;https://&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsdocs" value="/**&#10;* $TITLE$&#10;* @remarks&#10;* $DESCRIPTION$&#10;* @param $VAL_NAME$ - $VAL_DESC$&#10;* @returns $RETRUN_DESC$&#10;*/" description="TypeScript Documentation" toReformat="false" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAL_NAME" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAL_DESC" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="RETRUN_DESC" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

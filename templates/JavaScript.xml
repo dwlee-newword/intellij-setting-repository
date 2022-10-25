@@ -28,4 +28,30 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="log" value="this.logger.log('$MESSAGE$');" description="Logger.log()" toReformat="true" toShortenFQNames="true">
+    <variable name="MESSAGE" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="error" value="this.logger.error('$MESSAGE$');" description="Logger.error()" toReformat="true" toShortenFQNames="true">
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="warn" value="this.logger.warn('$MESSAGE$');" description="Logger.warn()" toReformat="true" toShortenFQNames="true">
+    <variable name="MESSAGE" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="debug" value="this.logger.debug('$MESSAGE$');" description="Logger.debug()" toReformat="true" toShortenFQNames="true">
+    <variable name="MESSAGE" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="verbose" value="this.logger.verbose('$MESSAGE$');" description="Logger.verbose()" toReformat="true" toShortenFQNames="true">
+    <variable name="MESSAGE" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>

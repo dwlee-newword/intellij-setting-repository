@@ -4,6 +4,14 @@
       <list>
         <Profile>
           <option name="defaultProfile" value="true" />
+          <option name="foldingGroups">
+            <list>
+              <GrepExpressionGroup />
+              <GrepExpressionGroup>
+                <option name="name" value="NestJS" />
+              </GrepExpressionGroup>
+            </list>
+          </option>
           <option name="grepExpressionGroups">
             <list>
               <GrepExpressionGroup>
@@ -68,7 +76,6 @@
                       </option>
                     </GrepExpressionItem>
                     <GrepExpressionItem>
-                      <option name="enabled" value="false" />
                       <option name="grepExpression" value=".*INFO.*" />
                       <option name="style">
                         <GrepStyle>
@@ -158,5 +165,6 @@
         </Profile>
       </list>
     </option>
+    <option name="version" value="2" />
   </component>
 </application>

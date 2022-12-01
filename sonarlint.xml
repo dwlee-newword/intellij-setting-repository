@@ -1,6 +1,6 @@
 <application>
   <component name="SonarLintGlobalSettings">
-    <option name="nodejsPath" value="/opt/homebrew/bin/node" />
+    <option name="nodejsPath" value="/usr/local/bin/node" />
     <rules />
   </component>
 </application>
